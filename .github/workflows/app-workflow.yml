@@ -19,7 +19,7 @@ jobs:
         pipenv install --dev
     - name: Lint with pylint
       run: |
-        pipenv run python app
+        pipenv run pylint app
     - name: Test with nose
       run: |
         pipenv run nosetests
